@@ -8,17 +8,17 @@ Changes accepted into the `master` branch of this repository are automatically s
 
 | Folder      | Description                                             |
 |-------------|---------------------------------------------------------|
-| `content`   | arbitrary files served at `azul3d.org/content`.         |
+| `content`   | Arbitrary files served at `azul3d.org/content`.         |
 | `pages`     | Markdown files rendered into HTML and served under `/`. |
-| `mdattr`    | Go package for parsing Markdown file attributes.        |
+| `mdattr`    | Go package for parsing markdown file attributes.        |
 | `templates` | Go HTML templates used to render the markdown files.    |
 
 ## Running Locally
 
 ```
-go get -u -d azul3d.org/website
+Go get -u -d azul3d.org/website
 cd $GOPATH/src/azul3d.org/website
-go build
+Go build
 ./website -https= -http=:8080 -update=false
 ```
 
